@@ -24,9 +24,9 @@
   
 + 云端服务器测试外网webserver接口（需要把x-upstream的地址替换成你要测试项目的地址）
   
-> curl -X POST http://127.0.0.1:9002/login --header "x-upstream: http://www.yhop-test.com:9080/ops/" --header "Content-Type: application/x-www-form-urlencoded" --data-urlencode "username=saltapi" --data-urlencode "password=fe1673dd2f25c5f351da81e7f1f684c4" --data-urlencode "eauth=sharedsecret"
+> curl -X POST http://127.0.0.1:9002/login --header "x-upstream: http://www.test.com:9080/ops/" --header "Content-Type: application/x-www-form-urlencoded" --data-urlencode "username=saltapi" --data-urlencode "password=fe1673dd2f25c5f351da81e7f1f684c4" --data-urlencode "eauth=sharedsecret"
 
-> curl -X POST http://172.16.16.11:9002/login --header "x-upstream: http://www.yhop-test:9080/ops/" --header "Content-Type: application/x-www-form-urlencoded" --data-urlencode "username=saltapi" --data-urlencode "password=fe1673dd2f25c5f351da81e7f1f684c4" --data-urlencode "eauth=sharedsecret"
+> curl -X POST http://172.16.16.11:9002/login --header "x-upstream: http://www.test.com:9080/ops/" --header "Content-Type: application/x-www-form-urlencoded" --data-urlencode "username=saltapi" --data-urlencode "password=fe1673dd2f25c5f351da81e7f1f684c4" --data-urlencode "eauth=sharedsecret"
 
 ![image](https://github.com/bevis126/Yhop-api-test/assets/27944125/db9848ac-6c73-4959-8ba0-8a62b91a620d)
 
