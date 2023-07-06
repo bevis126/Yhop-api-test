@@ -10,11 +10,15 @@
 
 {"return": [{"token": "3857debd63f3ff29895922881231452dabdc7790", "expire": 1688664495.164579, "start": 1688621295.164579, "user": "saltapi", "eauth": "sharedsecret", "perms": [".*", "@runner", "@wheel", "@jobs"]}]}
 
+![image](https://github.com/bevis126/Yhop-api-test/assets/27944125/05a6a713-8714-4b22-9986-631519a4a5c0)
+
 + 通过主控服务器webserverr的ops接口测试（9080为webserver服务端口）  
 
 > curl --location --request POST 'http://127.0.0.1:9080/ops/login' --header 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'username=saltapi' --data-urlencode 'password=fe1673dd2f25c5f351da81e7f1f684c4' --data-urlencode 'eauth=sharedsecret'  
 
  *通过ops测试，正常是返回的是403（因为webserver开启了加密）*
+
+![image](https://github.com/bevis126/Yhop-api-test/assets/27944125/60645b78-6562-4e4d-a7d6-efdc73008d73)
 
 + 通过返回的token获取事件（这步可以省略）  
   
